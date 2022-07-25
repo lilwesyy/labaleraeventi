@@ -1,0 +1,64 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbarleft{
+    margin-left: 5%;
+}
+
+#navbarright{
+    margin-right: 5%;
+}
+
+#navbar{
+    background-color: #F7F9FB;
+    -webkit-box-shadow: 8px 13px 50px 2px rgba(0,0,0,0.08); 
+    box-shadow: 8px 13px 50px 2px rgba(0,0,0,0.10);
+    font-family: "Roboto", sans-serif;
+}
+
+#slideshow{
+    height: 10%;
+    width: 100%;
+}
+
+#previous{
+
+    color: white;
+    border-radius: 25px;
+}
+
+#next{
+
+    color: white;
+    border-radius: 25px;
+}
+
+#chisiamocard{
+    margin-top: 5%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.11);
+}
+
+#totopbutton{
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(36, 36, 36); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    height: 12px;
+    width: 12px;
+}
+
+.hidden{
+    display: none;
+}
