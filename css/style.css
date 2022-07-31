@@ -66,6 +66,13 @@ body{
     height: 100%;
 }
 
+#scopripiutasto{
+    height: 40px;
+    margin-left: 40%;
+    margin-right: 40%;
+    position: relative;
+    margin-top: 2%;
+}
 
 
  @media only screen and (max-width:645px){
