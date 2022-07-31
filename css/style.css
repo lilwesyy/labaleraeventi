@@ -97,19 +97,19 @@ body{
  @media only screen and (max-width:425px){
     #thirdslideshow{
         position: relative;
-        transform: translate(0, -50%);
+        transform: translate(0, -80%);
     }
     #thirdslidetext{
         position: relative;
-        transform: translate(0, 300%);
+        transform: translate(0, 170%);
     }
     #firstslideshow{
         position: relative;
-        transform: translate(0, -50%);
+        transform: translate(0, -80%);
     }
     #firstslidetext{
         position: relative;
-        transform: translate(0, 300%);
+        transform: translate(0, 170%);
     }
  }
 
