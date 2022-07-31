@@ -19,11 +19,6 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-#slideshow{
-    height: 10%;
-    width: 100%;
-}
-
 #previous{
 
     color: white;
@@ -72,3 +67,81 @@ body{
 }
 
 
+
+ @media only screen and (max-width:645px){
+    #thirdslideshow{
+        position: relative;
+        transform: translate(0, -30%);
+    }
+    #thirdslidetext{
+        position: relative;
+        transform: translate(0, 500%);
+    }
+    #firstslideshow{
+        position: relative;
+        transform: translate(0, -30%);
+    }
+    #firstslidetext{
+        position: relative;
+        transform: translate(0, 500%);
+    }
+ }
+
+ @media only screen and (max-width:425px){
+    #thirdslideshow{
+        position: relative;
+        transform: translate(0, -50%);
+    }
+    #thirdslidetext{
+        position: relative;
+        transform: translate(0, 300%);
+    }
+    #firstslideshow{
+        position: relative;
+        transform: translate(0, -50%);
+    }
+    #firstslidetext{
+        position: relative;
+        transform: translate(0, 300%);
+    }
+ }
+
+
+ @media only screen and (max-width:375px){
+    #thirdslideshow{
+        position: relative;
+        transform: translate(0, -60%);
+    }
+    #thirdslidetext{
+        position: relative;
+        transform: translate(0, 220%);
+    }
+    #firstslideshow{
+        position: relative;
+        transform: translate(0, -60%);
+    }
+    #firstslidetext{
+        position: relative;
+        transform: translate(0, 220%);
+    }
+ }
+
+ 
+ @media only screen and (max-width:320px){
+    #thirdslideshow{
+        position: relative;
+        transform: translate(0, -80%);
+    }
+    #thirdslidetext{
+        position: relative;
+        transform: translate(0, 160%);
+    }
+    #firstslideshow{
+        position: relative;
+        transform: translate(0, -80%);
+    }
+    #firstslidetext{
+        position: relative;
+        transform: translate(0, 160%);
+    }
+ }
