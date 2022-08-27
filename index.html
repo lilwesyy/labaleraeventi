@@ -56,9 +56,9 @@
     </div>
 
 <!--    Navbar     -->
-    <div uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container;">
+    <div uk-sticky="start: 200; animation: sel-target: .uk-navbar-container;">
 
-    <nav class="uk-navbar-container" uk-navbar id="navbar" uk-scrollspy="target: > div; cls: uk-animation-slide-top; delay: 300; repeat: true">
+    <nav class="uk-navbar-container" uk-navbar id="navbar" uk-scrollspy="target: > div; cls: delay: 300; repeat: true">
 
         <div class="uk-navbar-left" id="navbarleft">
     
@@ -80,9 +80,9 @@
 
                             <ul class="uk-nav uk-nav-primary uk-nav-center ">
                                 <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
-                                <li><a href="#chisiamo"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Chi Siamo</a></li>
-                                <li><a href="#prodotti"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Prodotti</a></li>
-                                <li><a href="#contattaci"><span class="uk-margin-small-right" uk-icon="icon: mail"></span> Contattaci</a></li>
+                                <li><a href="#prodotti" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: bag"></span> Prodotti</a></li>
+                                <li><a href="#chisiamo" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: user"></span> Chi Siamo</a></li>
+                                <li><a href="#contattaci" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: mail"></span> Contattaci</a></li>
                             </ul>
 
                         </div>
@@ -204,7 +204,7 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
 
 <!--    Chi Siamo     -->
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="uk-child-width-expand@s" uk-grid id="chisiamo" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat: true">
     <div>
         <img id="gazebo" src="img/logo2.png" alt="">
     </div>
@@ -222,10 +222,12 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
     </div>
 </div>
 
+<!--    Chi Siamo     -->
+
 <!--    Prodotti     -->
 
 
-<div class="uk-section uk-visible@m">
+<div class="uk-section uk-visible@m" id="prodotti" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat: true">
     <div class="uk-container" style="text-align: center; margin-bottom: 4%;">
         <div class="uk-text-lead">Prodotti</div>
         <div class="uk-text-meta">Scopri i nostri prodotti attraverso le descrizioni e scopri di più per affitto e/o vendita!</div>
@@ -237,8 +239,8 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
            <div style="margin: auto; margin-left: 4%;" class="uk-text-lead">Gazebi <div  class="uk-text-meta">
 
             I nostri gazebi sono <b> collegabili</b> e realizzati in strutture di <b>ferro</b> o in <b>ferro zincato</b>, con la possibilità di essere <b>verniciati in polvere.</b>
-            I teli sono realizzati in <b>PVC</b> e sono <b>ignifughi</b>
-            Ecco le misure disponibili base: <b>3x3 3x4 3x5 3x6 4x4 4x5 4x6 5x5 5x6 6x6    </b>        
+            I teli sono realizzati in <b>PVC</b> e sono <b>ignifughi</b><br>
+            Misure disponibili base: <b>3x3 3x4 3x5 3x6 4x4 4x5 4x6 5x5 5x6 6x6    </b>        
 
         </div> <a id="scopripiutasto" class="uk-button uk-button-secondary" href="#contattaci" uk-scroll>Scopri di più</a></div>
         </div>
@@ -295,7 +297,8 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
         </div>
         <div>
             <div style="margin: auto; margin-right: 4%;"  class="uk-text-lead">Tensostrutture Modulari <div class="uk-text-meta">
-                Le nostre tensostrutture modulari 
+                Le nostre tensostrutture modulari hanno il telo in PVC e possiedono strutture resistenti in ferro perfette per l'uso esterno.
+                <br>Misure disponibili base <b>5x10</b>        
 
 
             </div> <a id="scopripiutasto" class="uk-button uk-button-secondary" href="#contattaci" uk-scroll>Scopri di più</a></div>
@@ -306,7 +309,10 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
     <div class="uk-child-width-expand@s uk-text-center uk-grid-match" uk-grid>
 
         <div id="thirdslidetext">
-            <div style="margin: auto; margin-left: 4%;"  class="uk-text-lead">Balli a Palchetto <div class="uk-text-meta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae velit culpa unde tenetur, ex a, quasi asperiores voluptates voluptatem odio laudantium quo quidem dolor! Blanditiis facere laboriosam laborum accusamus veniam.</div> <a id="scopripiutasto" class="uk-button uk-button-secondary" href="#contattaci" uk-scroll>Scopri di più</a></div>
+            <div style="margin: auto; margin-left: 4%;"  class="uk-text-lead">Balli a Palchetto <div class="uk-text-meta">
+                <br>Misure disponibili base <b>27x15 24x12 30x12</b>  
+            
+            </div> <a id="scopripiutasto" class="uk-button uk-button-secondary" href="#contattaci" uk-scroll>Scopri di più</a></div>
         </div>
         <div id="thirdslideshow" class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay:true">
 
@@ -397,7 +403,7 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
             </ul>
         </div>
         <div>
-            <div style="margin: auto;"  class="uk-text-lead">Gazebi <div class="uk-text-meta">
+            <div style="margin: auto;"  class="uk-text-lead">Tensostrutture Modulari <div class="uk-text-meta">
                 I nostri gazebi sono <b> collegabili</b> e realizzati in strutture di <b>ferro</b> o in <b>ferro zincato</b>, con la possibilità di essere <b>verniciati in polvere.</b>
                 I teli sono realizzati in <b>PVC</b> e sono <b>ignifughi</b>
                 Ecco le misure disponibili base: <b>3x3 3x4 3x5 3x6 4x4 4x5 4x6 5x5 5x6 6x6    </b>        
@@ -428,7 +434,7 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
 
         </div>
         <div>
-            <div style="margin: auto;"  class="uk-text-lead">Gazebi <div class="uk-text-meta">
+            <div style="margin: auto;"  class="uk-text-lead">Balli a Palchetto <div class="uk-text-meta">
                 I nostri gazebi sono <b> collegabili</b> e realizzati in strutture di <b>ferro</b> o in <b>ferro zincato</b>, con la possibilità di essere <b>verniciati in polvere.</b>
                 I teli sono realizzati in <b>PVC</b> e sono <b>ignifughi</b>
                 Ecco le misure disponibili base: <b>3x3 3x4 3x5 3x6 4x4 4x5 4x6 5x5 5x6 6x6    </b>        
@@ -521,7 +527,7 @@ box-shadow: 3px 25px 50px 13px rgba(0,0,0,0.2);">
 
 <!--    Contattaci     -->
 
-<div class="uk-section" id="contattaci" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat: true" id="contattaci">
+<div class="uk-section" id="contattaci" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300; repeat: true">
     <div class="uk-container">
         <div class="uk-child-width-expand@s" uk-grid>
             <div>
